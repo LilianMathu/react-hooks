@@ -6,11 +6,11 @@ function Hook2() {
   const [count, setCount] = useState(initialCount);
 
   const handleIncrement = () => {
-    setCount(count + 1);
+    setCount((prevState) => prevState + 1);
   };
 
   const handleDecrement = () => {
-    setCount(count - 1);
+    setCount((prevState) => prevState - 1);
   };
 
   const handleIncrementByFive = () => {
