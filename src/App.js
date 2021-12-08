@@ -1,9 +1,13 @@
-import './App.css';
+import "./App.css";
+
+//import CounterHook from "./Components/CounterHook";
+import Hook2 from "./Components/Hook2";
 
 function App() {
   return (
     <div className="App">
-      <br />
+      {/*<CounterHook />*/}
+      <Hook2 />
     </div>
   );
 }
