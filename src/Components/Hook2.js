@@ -30,6 +30,7 @@ function Hook2() {
       <br />
       <button onClick={handleIncrementByFive}>Increment 5</button>
       <br />
+      <br />
     </div>
   );
 }
