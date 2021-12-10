@@ -2,18 +2,25 @@ import React, { useState, useEffect } from "react";
 
 function UseEffect1() {
   const [count, setCount] = useState(0);
+  const [name, setName] = useState("");
 
   const addClicks = () => {
     setCount(count + 1);
   };
 
   useEffect(() => {
-    document.title = `You clicked ${count} times`;
-  });
+    console.log("updated");
+    document.title = `Clicked ${count} times`;
+  }, [count]);
+
+  const handleChange = (e) => {
+    setName(e.target.value);
+  };
 
   return (
     <div>
-      <button onClick={addClicks}>Click {count} times</button>
+      <input type="text" value={name} onChange={handleChange} />
+      <button onClick={addClicks}>Clicked {count} times</button>
     </div>
   );
 }
