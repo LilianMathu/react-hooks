@@ -1,26 +1,19 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 function Reminder() {
-  const [items, setItems] = useState([]);
+  const [count, setCount] = useState(0);
 
-  const addNumbers = () => {
-    setItems([
-      ...items,
-      {
-        id: items.length,
-        value: Math.ceil(Math.random() * 10),
-      },
-    ]);
+  const changeCount = () => {
+    setCount(count + 1);
   };
+
+  useEffect(() => {
+    document.title = `clicked ${count} times`;
+  });
 
   return (
     <div>
-      <button onClick={addNumbers}>Add number</button>
-      <ul>
-        {items.map((item) => (
-          <li key={item.id}>Value: {item.value}</li>
-        ))}
-      </ul>
+      <button onClick={changeCount}>Count: {count}</button>
     </div>
   );
 }
