@@ -4,7 +4,8 @@ import "./App.css";
 //import Hook2 from "./Components/Hook2";
 //import Hook3 from "./Components/Hook3";
 //import UseEffect1 from "./Components/UseEffect1";
-import Reminder from "./Components/Reminder";
+//import Reminder from "./Components/Reminder";
+import MousePosition from "./Components/MousePosition";
 
 function App() {
   return (
@@ -14,7 +15,8 @@ function App() {
       {/*<Hook3 />*/}
       {/*<Hook4 />*/}
       {/*<UseEffect1 />*/}
-      <Reminder />
+      {/*<Reminder />*/}
+      <MousePosition />
     </div>
   );
 }
