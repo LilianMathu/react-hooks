@@ -1,10 +1,10 @@
 import "./App.css";
-import ConditionalRendering from "./react basics/ConditionalRendering";
+import Register from "./react basics/ConditionalRendering";
 
 function App() {
   return (
     <div className="App">
-      <ConditionalRendering />
+      <Register />
     </div>
   );
 }
