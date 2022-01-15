@@ -16,7 +16,7 @@ const ConditionalRendering = () => {
     setLoggedIn(true);
   });
 
-  return <div>{loggedIn ? "Hello Lilian" : "Hello stranger"}</div>;
+  return <div>{loggedIn ? <h1>Hello Lilian</h1> : <h1>Hello Guest</h1>}</div>;
 };
 
 export default ConditionalRendering;
