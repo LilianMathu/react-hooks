@@ -1,5 +1,5 @@
 import "./App.css";
-import Register from "./react basics/ConditionalRendering";
+import Register from "./react basics/Register";
 
 function App() {
   return (
