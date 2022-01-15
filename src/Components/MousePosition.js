@@ -4,21 +4,17 @@ function MousePosition() {
   const [x, setX] = useState(0);
   const [y, setY] = useState(0);
 
-  const moveFunction = (e) => {
-    setX(e.clientX);
-    setY(e.clientY);
-  };
+  const MouseMoveHandler = (e) => {
+    console.log('mouse has moved');
+    
+  }
 
   useEffect(() => {
-    console.log("useEffect called");
-    window.addEventListener("mousemove", moveFunction);
-  }, []);
+    console.log("use-effect called");
+    window.addEventListener("mousemove", MouseMoveHandler);
+  });
 
-  return (
-    <div>
-      X is - {x}, Y is - {y}
-    </div>
-  );
+  return <div></div>;
 }
 
 export default MousePosition;
